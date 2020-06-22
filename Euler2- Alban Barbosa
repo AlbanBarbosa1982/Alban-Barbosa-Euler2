@@ -1,0 +1,13 @@
+sum_of_even_numbers = 0
+fibonacci_sequence_term_a = 1
+fibonacci_sequence_term_b = 0
+
+while fibonacci_sequence_term_a < 4000000:
+        fibonacci_sequence_term_c = fibonacci_sequence_term_b
+        fibonacci_sequence_term_b = fibonacci_sequence_term_a
+        fibonacci_sequence_term_a = fibonacci_sequence_term_c + fibonacci_sequence_term_b
+        print (fibonacci_sequence_term_a)
+
+        if (fibonacci_sequence_term_a % 2 == 0):
+            sum_of_even_numbers += fibonacci_sequence_term_a
+        print (sum_of_even_numbers)
